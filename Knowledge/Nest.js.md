@@ -20,6 +20,7 @@ $ nest new project-name
 + Primero se debe crear el modulo antes de crear servicios o controladores, etc.
 + are used to organize related code into cohesive units
 + a way to encapsulate related components, controllers, and services within a single module
++ From a technical perspective, ==the sole purpose of a module is to configure the dependency injection mechanism== of NestJS
 
 ```
 nest g mo users
@@ -27,6 +28,14 @@ nest g mo users
 
 + The root module is the starting point Nest uses to build the application graph - the internal data structure Nest uses to resolve module and provider relationships and dependencies
 
+### Each Module
+- **Providers** – In this array, we can define what will be injected in places as they are indicated by injection tokens. The injection token can be, for example, a class definition, so in most cases you will see an array of classes here.
+- **Controllers** – NestJS treats controllers a little bit different than any other providers so they have their own definitions. However, they can also be injected like any other providers.
+
+**In the second group we have:**
+
+- **Imports** – We define a list of modules that we want to use in our module. We will be able to inject providers they exported into our own providers.
+- **Exports** – We define a list of providers that we want to make accessible for other modules.
 ### @Module() decorator
 + **providers** -> the providers that will be instantiated by the Nest injector and that may be shared at least across this module (services)
 + controllers
@@ -39,6 +48,32 @@ nest g mo users
 ### Resources
 + Intro to Modules
 + https://medium.com/@briankworld/creating-a-shared-module-in-nestjs-benefits-and-use-cases-6292a1dcd200 - Shared modules
++ https://youtu.be/jOytv6PQxN0?si=u46mscGTPySauHYj How a Large Scale NestJS App Should ACTUALLY Look (Hierarchical Modules, multiple apps in the same project)
+
+## Scalling Nestjs App
+### Hierarchical Modules
++ Group related modules in a higher order module
+
+e.g.
+![[Pasted image 20241003001403.png]]
+
+You should group modules by
++ Business Logic
++ Team Organization
+
+### Several applications in same nest js project
++ Serves as a high level abstraction layer reusing modules in different contexts
+e.g
+![[Pasted image 20241003001735.png]]
+
++ apps created are parts of the same ecosystem, they shared several components
++ To share things acrross apps you can create libraries where you can share: entire modules, decorators, exceptions, middlewares, filters etc.
+
+![[Pasted image 20241003002041.png]]
+
+### Microservices
++ Using the several apps approach you can have multiple apps where each other are microservices that can be deploy independently
+
 ## 2. Controllers
 + Controllers are responsible for handling incoming **requests** and returning **responses** to the client.
 + In order to create a basic controller, we use ==classes and decorators==. Decorators associate classes with required metadata and enable Nest to create a routing map
@@ -117,21 +152,5 @@ Intercepta la respuesta que emitirá el controlador y la puede transformar compl
 + https://youtube.com/playlist?list=PLergODdA95kfcSoXqZZ-IDImO6YaQLYlG&si=fOTcjd_e1d1sdUPB - Playlist super recomendada
 + https://youtube.com/playlist?list=PL2cV4xVnwFlmhwJwbUOchUZMJEEh_9wAQ&si=OAPcGrID0iQma_vy - Lista de reproduccion de nest
 + https://www.youtube.com/watch?v=wsqcg5ZtUMM - Curso de nest Fatz
-
-# Websockets
-+ standard that describes a way for clients and servers to exchange messages in realtime
-+ The websocket server **consume events** for the client that is usign the websocket server
-	+ Client **send** messages
-	+ server needs to listen to those events (**Subscribe to events**)
-+ Es un protocolo que esta por encima de http
-## WS libraries for Javascript
-+ **WebSocket** - built in to browsers (no library needed)
-+ **ws** - a node package to emulate the WebSocket support for browsers but for node and usually used as a server (though it can do both)
-+ **Socket.io** - a custom protocol/library on top of WebSockets for browsers and node (must be used both on client and server). also it allows you to emulate web sockets with http pooling
-
-## Resources
-1. https://hrugvedprashantchavan.medium.com/nestjs-a-guide-to-websocket-implementation-655593fc73ab
-2. https://devtalles.com/files/nest-cheatsheet.pdf - Cheat sheet muy util
-
 # Ciclo de vida nestjs
 ![[Pasted image 20240913094441.png]]

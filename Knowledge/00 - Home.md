@@ -1,7 +1,5 @@
 
 + [[Learn English]]
-+ [[Professional Growth]]: LinkedIn, curriculum vitae (resume)
-+ [[Hogar]]
 + [[UI - UX]]
 ## Math
 + [[Discrete Maths]]
@@ -23,9 +21,12 @@
 	+ [[React.js]]
 	+ [[TypeScript]]
 	+ [[Next.js]]
+	+ [[WebAssembly]]
 + [[Linux Ricing]] Customize your environment with arch Linux
 + [[Backend]]
 ## Some Uni-courses
+### Semester 5
++ [[Operative Systems]]
 ### Semestre 7
 + [[Teoria General de Sistemas]] (Systems Theory)
 + [[Calidad de Productos de Software]]
