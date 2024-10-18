@@ -24,6 +24,7 @@
 	+ [[WebAssembly]]
 + [[Linux Ricing]] Customize your environment with arch Linux
 + [[Backend]]
++ [[learn git]]
 ## Some Uni-courses
 ### Semester 5
 + [[Operative Systems]]
