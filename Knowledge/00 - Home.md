@@ -5,10 +5,10 @@
 + [[Discrete Maths]]
 + [[Basic Maths]]: Operations and tricks
 ## Computational Thinking
-+ [[DSA]]: Data Structures and Algorithms
 + [[OPP (Object Oriented Programming)]]
-+ [[Design Patterns]]
-+ [[Architectures]]
++ [[DSA - Data Structures and Algorithms]]:
++ [[DPP - Design Patterns and Principles]]
++ [[Software Architectures]]
 + [[Relational Data Bases]]
 ## Programming Languages and Technologies
 + [[Learning Java]]
@@ -26,6 +26,8 @@
 + [[Backend]]
 + [[learn git]]
 ## Some Uni-courses
+### Semester 4
++ [[Programming Languages Fundamentals]]
 ### Semester 5
 + [[Operative Systems]]
 ### Semestre 7
@@ -33,7 +35,7 @@
 + [[Calidad de Productos de Software]]
 + [[Artificial Intelligence]]
 + [[Computational Simulation]]
-+ [[Desarrollo de Software II]]
++ [[SfD - Software Development 1, 2]]
 ---
 ## Other
 +  [[Templates index]]

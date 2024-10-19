@@ -73,6 +73,9 @@ function findById<T>(arrar: T, index: number): T | undefined {
 }
 ```
 
+## Interfaces
+Acts as a contract by enforcing a particular shape on a class or a specific type on a function or variable.  
+Classes that “implement” another class must declare all the properties present in the class they implement.
 # Especifico para react
 + `tsx` para componentes
 
@@ -105,6 +108,8 @@ function handleChange(event: ChangeEvent<HTMLInputElement>){
 	setInputValue(event.target.value);
 }
 ```
+
+# OOP in Typescript
 
 # Type Assertion
 

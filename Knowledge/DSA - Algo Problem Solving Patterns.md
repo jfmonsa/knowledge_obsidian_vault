@@ -1,28 +1,3 @@
-#index
-____
-Date :2024-06-27
-status:
-tags:
-___
-
-# Notes
-## [[1. Formalization of Algorithm concept]]
-## [[2. Specification  and Proof Correctness of Iterative Algos]]
-
-## [[3. Analysis of Iterative Algorithms  (Computational time)]]
-
-## [[4. Asymptotic Notations]]
-
-## 5. Recursion Intro
-+ A method that calls itself as a subroutine until a base case is reached
-+  each time a recursive function calls itself, it reduces the given problem into subproblems
-+ The recursion call continues until it reaches a point where the subproblem can be solved without further recursion.
-+ A basic recursive function has two cases: **base case** and **recursive case (recurrence relation)**
-
-### Resources
-+ Continue to practicing here: https://leetcode.com/explore/featured/card/recursion-i/
-## 6. Analysis of Recursive Algos
-# Patterns
 
 ## Tips:
 + If input array is sorted then:
@@ -91,7 +66,6 @@ There are two types of sliding window problems:
 + The data structure must be sorted.
 - Access to any element of the data structure should take constant time.
 - time: $O(log(n))$ 
-## [[Sorting algos]]
 
 ## Multhi-threading and Parallelism
 ## Bitwise
@@ -99,16 +73,3 @@ There are two types of sliding window problems:
 ## Dynamic
 ## Greedy
 ## Topological Sort?
-# Data Structures
-![[Pasted image 20240711113903.png]]
-+ [[arrays]]
-+ [[stacks]]
-+ [[Linked List]]
-+ [[Queues]]
-+ [[Hashing and Hash Maps (Hash Table)]]
-+ [[Trees]]
-+ [[Binary Search Tree (BST)]]
-+ [[Heap (Priority Queue)]]
-## References
-1. Cormen T, Leiserson C, Rivest R, Stein C - Introduction To Algorithms
-
