@@ -21,3 +21,6 @@
 ## 8 - [[DSA - Data Structures]]
 ## 9 - [[DSA - Algo Problem Solving Patterns]]
 
+---
+# Other
+## - [[DSA - ELO Rating Algo]]

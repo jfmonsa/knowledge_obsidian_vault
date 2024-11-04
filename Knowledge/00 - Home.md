@@ -10,6 +10,9 @@
 + [[DPP - Design Patterns and Principles]]
 + [[Software Architectures]]
 + [[Relational Data Bases]]
+---
++ [[Testing]]
++ [[Backend]]
 ## Programming Languages and Technologies
 + [[Learning Java]]
 + [[Learning C++]]
@@ -17,14 +20,16 @@
 	+ [[Learn Node.js]]
 		+ [[Express.js]]
 		+ [[Nest.js]]
-			+ [[Testing]]
 	+ [[React.js]]
 	+ [[TypeScript]]
 	+ [[Next.js]]
 	+ [[WebAssembly]]
 + [[Linux Ricing]] Customize your environment with arch Linux
-+ [[Backend]]
+## Tools
 + [[learn git]]
++ Vim
++ Browsers
+	+ Caret browsing
 ## Some Uni-courses
 ### Semester 4
 + [[Programming Languages Fundamentals]]

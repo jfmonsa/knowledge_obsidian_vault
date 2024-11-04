@@ -1,3 +1,5 @@
+Web communication method that use http requests to perform CRUD operations on resources and its base on stateless communication between client and server usign standard http methods like: GET, POST, PUT and DELETE
+
 + **API**: Application Programming Interface
 + **REST**: Representational State Transfer, Estilo de arquitectura de software
 + client / server model thought HTTP 

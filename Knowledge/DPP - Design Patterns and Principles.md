@@ -1,15 +1,33 @@
+# Concepts
+## Coupling
 
+When components are tightly coupled, they have a strong dependency on each other, meaning that changes to one component may have a ripple effect on other components. This can make the system difficult to maintain, test, and extend.
+
+> ==**Coupling** vs. **Cohesion**==
 # Principles
 
 Basic:
 + DRY: Don't Repite Yourself
 + KISS: Keep It Simple Stupid
 + [[DPP - SOLID]]
++ [[DPP - Inversion of Control (IoC)]]
 
 # Patterns
+## -  [[DPP - Error and Exception - Handling]]
+## - [[DPP - Data Transfer Object (DTO)]]
+## - [[DPP - Dependency Injection Pattern]]
+## - [[DPP- Factory Pattern]]
+## - [[DPP - DAO (Data Access Object)]]
+## - [[DPP - Repistory Pattern]]
+## - [[DPP - Singletone]]
+## - Specification
 ## Guard Clauses
 + Early return
-## Switch case with object literal
-## Singletone
-## [[DPP- Factory Pattern]]
-## [[DPP - Dependency Injection Pattern]]
+## (Object Lookup) - Switch case with object literal
+
+
+## - Strategy Pattern
+## - Decorators
+## - Facade
+## - Observable
+## - Template
