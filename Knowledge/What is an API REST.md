@@ -18,7 +18,7 @@ Web communication method that use http requests to perform CRUD operations on re
 + Metadata of the request
 + Define media type
 + Define http verb
-### Body
+### Body, params, query
 + Contains custom payload of data
 ## HTTP verbs / methods
 + GET

@@ -7,13 +7,13 @@ console.log('Hello, World!');
 + we can se `'use strict';` at the start of our script or at  the top of a block o code, this means that the js engine will ignore the old javascript and use only the new
 + However if we use Classes or modules this automatically behaves if we are using `'use strict';`
 ## 3. Vars
-+ `let`,`const`,`var`, `var`has no block scope
++ `let`,`const`,`var`. (`var`has no block scope)
 ## 4. Data Types
 ### Primitives
 + String
 + Number
 + BigInt, we have to append `n` to the end of the number
-	+ Was created to avoid errors
+	+ Was created to avoid overflow errors
 	```JavaScript
 	console.log(9007199254740991 + 1); // 9007199254740992
 	console.log(9007199254740991 + 2); // 9007199254740992
@@ -25,7 +25,7 @@ console.log('Hello, World!');
 + Symbol -> Unique identifier
 ### Non-primitive
 + Objects
-	+ use `typeof(x)` o `typeof`operator
+	+ use `typeof`  operator
 
 ## 5. Type Conversion
 + Using type constructors `Number()`, `String()`
@@ -39,7 +39,7 @@ alert( +apples + +oranges ); // 5
 ```
 ## 6. Operators
 + **Precedence**: Unary Operators > Binary Ones. e.g: +a (unary) > (binary) a+b
-+ **Assignment**: returns a value
++ **Assignment**: any javascript expression returns a value
 ```Javascript
 let a = 1;
 let b = 2;
@@ -59,9 +59,9 @@ alert( b ); // 4
 alert( c ); // 4
 ```
 + Bitwise ops: `&,|,~,^,<<,>>,>>>`
-+ **Comma** -> Evaluates several expressions dividing them wit a comma `,`. Each of them is evaluated, only the result of the last is returned
++ **Comma** -> Evaluates several expressions dividing them with a comma `,`. Each of them is evaluated, only the result of the last is returned
 	+ **Caution** -> comma has very low precedence, parentheses matters
-	+ Without them: `a = 1 + 2, 3 + 4` evaluates `+` first, summing the numbers into `a = 3, 7`, then the assignment operator `=` assigns `a = 3`, and the rest is ignored. It’s like `(a = 1 + 2), 3 + 4`.
+	+ Without them: `a = 1 + 2, 3 + 4` evaluates `+` first, summing the numbers into `a = 3, 7`, then the assignment operator `=` assigns `a = 7`, (the last value between 3,7 is 7) and the rest is ignored. It’s like `(a = 1 + 2), 3 + 4`.
 	+ Sometimes its useful to put several actions in one line
 ```Javascript
 // three operations in one line

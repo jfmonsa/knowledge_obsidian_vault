@@ -1,84 +1,40 @@
 + Compilado
-+ superset de javascript
++ superset of javascript, ts offers an additional layer on top of js features: TypeScript's type system
 + `.ts`
-+ autocompletado en el editor de codigo
-# Intro
-## Primitive Types
-+ boolean
-+ string
-+ number
-+ any (ojo) <- tipo por defecto en JavaScript
-## Inferencia de Tipos
-+ Una vez declaras una variable con un tipo primitivo, TS infiere el tipo y vigila que nunca usemos otro
-```typescript
-const text = "This is text";
-```
-## Declaración explicita de tipos
-```typescript
-const n1: number = 123;
-```
++ intellisence in code editor, improved static code analysis  to avoid type related run time errors
 
-## Funciones
-```typescript
-function multiplyBy2(arr: Array<number>){
-	const newArr = arr.map( item => item*2)
+> The goal of TypeScript is to be a static typechecker for JavaScript programs - The Typescript Handbook
+# References
++ https://www.typescriptlang.org/docs/handbook/intro.html
+# Notes
+## 1 - [[ts - Intro]]
++ Primitive types, type inference, explicit type declaration: (interfaces, type unions and generics), structural type sustem (duck typing)
+## 2 - [[ts - More on Types]]
++ Interfaces vs Types, Type assertions `as`, Literal Types and `as const`, how to handle strictNullChecks: on (Non-null assertion operator `!`)
+## 3 - [[ts - Narrowing ]]
+
+# Narrowing
+explicitly check if a type is correct when we have union types and one operations is incompatible with some types of the union
+
++ typeof type guards
+
+```ts
+function padLeft(padding: number | string, input: string): string {
+if (typeof padding === "number") {
+	return " ".repeat(padding) + input;
+	}
+return padding + input;
 }
 ```
 
-## Objetos
-+ Usar interfaces o types
-```typescript
-const person = {
-	name: "Alberto",
-	age: 16,
-	gender: "Male"
-}
++ truthiness narrowing (check if something not-boolean) is not `null` or `undefined`
++ `in` operator narrowing: check if and object or its prototype chain has a property with a name
++ `instanceof` narrowing: x instanceof Foo checks whether the prototype chain of x contains Foo.prototype
++ control flow analysis
+## type predicates
 
-type Person = {
-	name: string,
-	age: number
-	// propiedad opcional
-	// tipo stricto o "Male" o "Female"
-	gender?: "Male" | "Female"
-}
-
-// Recomendado para funciones y propiedades de React
-interface PersonI {
-	name: string,
-	age: number
-	// propiedad opcional
-	// tipo stricto o "Male" o "Female"
-	gender?: "Male" | "Female"
-} 
-
-// los tipos tienen herencia
-type Programmer = {
-	language: "Javascript" | "Typescript"
-}
-
-// operaciones de conuntos: unión, intersección, diferencia
-// union de tipos
-type ProgrammerPerson = Person & Programmer;
-
-function addOneToAge(person: any){
-	person.age += 1;
-}
-```
-
-## Funciones genéricas / Template Functions
-```typescript
-function findById<T>(arrar: T, index: number): T | undefined {
-	const found = array.find( (elemnt, elementIndex) => index === elementIndex);
-	return found;
-}
-```
-
-## Interfaces
-Acts as a contract by enforcing a particular shape on a class or a specific type on a function or variable.  
-Classes that “implement” another class must declare all the properties present in the class they implement.
 # Especifico para react
 + `tsx` para componentes
-
 ## Props
 ```typescript
 type Props = {
@@ -109,10 +65,6 @@ function handleChange(event: ChangeEvent<HTMLInputElement>){
 }
 ```
 
-# OOP in Typescript
 
-# Type Assertion
-
-# Narrowing
 
 # Satisfies Operator

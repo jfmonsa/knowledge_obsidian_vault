@@ -27,3 +27,5 @@
 + Estableciendo una jerarquia autorizando a ciertas personas para recibir información y que la retrasmita a sus subordinados, reducimos los canales de comunicación y también la posibilidad de que esta sea modificada
 + La comunicación libre, sin restricción produce ruido dentro del sistema
 + Sistemas sociales deben poseer una red selectiva de comunicación
+
+![[Pasted image 20241104102822.png]]

@@ -10,10 +10,10 @@
 + ==First-class Functions==, This means:
 	+ Functions are treated like any other variable
 	+ we can pass it as arguments, we can return them
-+ Run time environments (Javascript engines): ==Browser and Node.js==programming)
++ Run time environments (Javascript engines): ==Browser and Node.js== )
 
 # 1 - [[JS - Core Language]]
-+ stric, vars, data types, casting, operators, comparisons, conditional branching, ??, loops, functions
++ strict, vars, data types, casting, operators, comparisons, conditional branching, ??, loops, functions
 # 2. [[JS - Objects]]
 + Objects: computed properties, methods; Object references and copying, memory management (reachability),  this and method shorthands, constructor operator (new), Optional chaining (?.), Symbol, object to primitive conversion (to number or strings)
 # Asynchronous JavaScript

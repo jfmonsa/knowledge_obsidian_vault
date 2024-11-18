@@ -7,12 +7,14 @@ When components are tightly coupled, they have a strong dependency on each other
 # Principles
 
 Basic:
-+ DRY: Don't Repite Yourself
-+ KISS: Keep It Simple Stupid
++ KISS: Keep It Simple Stupid Principle
++ YANGI: You ain't gonna need it Principle. never implements things before you need them.
++ [[DPP - Abstraction Principles - DRY, WET, AHA]]
 + [[DPP - SOLID]]
-+ [[DPP - Inversion of Control (IoC)]]
++ [[DPP - Inversion of Control (IoC)]], same as Dependency Inversion Principle of Solid
 
 # Patterns
+![[Pasted image 20241104211111.png]]
 ## -  [[DPP - Error and Exception - Handling]]
 ## - [[DPP - Data Transfer Object (DTO)]]
 ## - [[DPP - Dependency Injection Pattern]]

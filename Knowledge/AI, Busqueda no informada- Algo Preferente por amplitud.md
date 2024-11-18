@@ -36,6 +36,7 @@ En otras Palabras:
 ![[Pasted image 20240910070823.png]]
 
 ## Implementación
++ Cuando tenemos un mapa o un grafo, es importante guardar los nodos visitados para no volver a expandirlos
 ![[Pasted image 20240910071454.png]]
 ![[Pasted image 20240910071505.png]]
 

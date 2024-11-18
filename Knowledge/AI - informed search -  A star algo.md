@@ -33,3 +33,5 @@ A* es completo y optimo si se cumple con que la heuristica $h(n)$ sea admisible
 
 # Resources
 + https://youtu.be/A60q6dcoCjw?si=h8Ib0G3QcB5edQ7V - The hidden beauty of the A* algorithm
++ http://theory.stanford.edu/~amitp/GameProgramming/index.html (Good respirce for pahtfinding in general)
++ https://www.redblobgames.com/pathfinding/a-star/introduction.html
