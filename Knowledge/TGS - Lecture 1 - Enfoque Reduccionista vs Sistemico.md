@@ -32,8 +32,8 @@ El problema de la superespecialización en las disciplinas consiste en que, al e
 
 **Isomorfismos vs Supe-especialización**: La implementación de un sistema de IA para analizar el cambio climatico o algun problema de medicina require conocimientos combinados de distintas areas biología, economía, etc.
 
-## Chapter 1 - El Enfoque de los sistemas
-### 1.1 - El enfoque reduccionista
+# Chapter 1 - El Enfoque de los sistemas
+## 1.1 - El enfoque reduccionista
 + Por medio del cual se estudia un fenómeno complejo a través del análisis de sus elementos o partes componentes
 
 Ejemplo: (p. 18)
@@ -54,14 +54,14 @@ Ejemplo: (p. 18)
 	+ La TGS toma un enfoque contrario al enfoque reduccionista, ==integrar partes hasta alcanzar una totalidad lógica==
 	+ La necesidad de la TGS facilita la ==comunicación entre científicos== lo cual cual contribuye al conocimiento
 
-### 1.2 - Dos Enfoques para la TGS
+## 1.2 - Dos Enfoques para la TGS
 
 1. **Enfoque 1**: buscar isomorfismos o abstracciones que ayuden a encontrar patrones entre distintas areas de conocimientos
 2. **Enfoque 2**: Aplicar la jerarquia de Boulding para determinar que nivel de complejidad tiene un sistema (depronto analizar subsistemas y repetir el analisis)
 
 > Estos enfoques deben ser más complementarios que competitivos
 
-### 1.3 - Tendencias que buscan la aplicación de la TGS
+## 1.3 - Tendencias que buscan la aplicación de la TGS
 Han surgido tendencias que buscan aplicar la TGS a través de ciencias aplicadas:
 
 #### a) Cibernética

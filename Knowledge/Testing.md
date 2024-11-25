@@ -8,6 +8,7 @@
 ### Unit Tests
 + Test small pieces of your app
 la unidad testeada puede ser una función, una clase o un modulo, independientes unos de otros, para una entrada el test unitario comprueba el resultado. No contactan con el mundo exterior.
+
 ### Integration Tests
 Comprobamos la integración de los controladores con los servicios, la integración de nuestro sistema con algo de la infraesctructura (db, archivos etc...) pueden hacer llamadas a servicios externos
 ### Tests e2e (pruebas funcionales)

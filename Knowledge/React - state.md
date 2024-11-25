@@ -4,7 +4,7 @@
 > [!WARNING]
 > Only use useState when the following conditions are meet:
 > 1. it can be computed each render
-> 2. it need to be redered
+> 2. it need to be re-redered
 
 ## Pass a callback to set update state
 + when update an state depends on previous sate
@@ -56,5 +56,9 @@ const readGameData = () => {
   const [gameData, setGameData] = useState<any>(readGameData);
   ```
 
+## Derived data from state
+
+> [!WARNING]
+> You should not store in states what can be derived from other state variables
 ### Local Storage
-Acceder a los valores del `localStorage` dentro del componente es muy pesado en cuanto al rendimiento, ya que se **ejecuta sincrónicamente en cada re-renderizado** esto permitirá acceder a la información una sola vez al momento que se crea el componente, esto por la definición de `useState`. .
+Acceder a los valores del `localStorage` dentro del componente es muy pesado en cuanto al rendimiento, ya que se **ejecuta sincrónicamente en cada re-renderizado** esto permitirá acceder a la información una sola vez al momento que se crea el componente, esto por la definición de `useState`.

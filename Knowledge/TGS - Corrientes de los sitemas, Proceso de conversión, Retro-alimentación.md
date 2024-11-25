@@ -5,7 +5,7 @@
 	+ Recursos materiales
 	+ Recursos financieros
 	+ Recursos humanos
-	+ Información (No sigue la ley de conservación de la energia, al contrario de siempre ser la misma energía, esta va aumentando)
+	+ Información (No sigue la ley de conservación de la energia, al contrario de siempre ser la misma energía, esta va aumentando) (**Ley de incrementos**)
 + Ley de la conservación de la energía
 ### 4.2 Proceso de conversión
 + Todo sistema tiene un objetivo

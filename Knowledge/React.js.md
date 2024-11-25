@@ -9,22 +9,24 @@
 + dummy vs statefull components, props, JSX, children props, react fragment.
 ## 3 - [[React - Conditional Rendering and Render Collections]]
 
-## 4 - React - Event Handling
-+ en las props onClick, onChange, onSubmit etc. pasar un callback que se ejecutara cada que ese estado cambie
-## 5 - [[React - state]]
-+ states, inmutability, re-renders, callback to update state, callback to initialize state
-## 6 - [[React - useEffect (Life cycle)]]
+## 4 - [[React - UI as a Tree]]
 
-## 7 - [[React - Custom Hooks]]
+## 5 - React - Event Handling
++ en las props onClick, onChange, onSubmit etc. pasar un callback que se ejecutara cada que ese estado cambie
+## 6 - [[React - state]]
++ states, inmutability, re-renders, callback to update state, callback to initialize state
+## 7 - [[React - useEffect (Life cycle)]]
+
+## 8 - [[React - Custom Hooks]]
 + what are? when to use them? 
-## 8 - [[React - Context]]
+## 9 - [[React - Context]]
 + Global state, context vs Props Drilling
-## 9 - React - Basic Optimizations, useCallback, useMemo
+## 10 - React - Basic Optimizations, useCallback, useMemo
 
 # Other Hooks
 
 ## - [[React - useRef]]
-
+ 
 # React Design Patterns
 
 # Other

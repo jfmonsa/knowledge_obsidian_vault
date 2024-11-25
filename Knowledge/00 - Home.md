@@ -6,6 +6,7 @@
 + [[Basic Maths]]: Operations and tricks
 ## Computational Thinking
 + [[OPP (Object Oriented Programming)]]
++ [[FP - Functional Programming]]
 + [[DSA - Data Structures and Algorithms]]:
 + [[DPP - Design Patterns and Principles]]
 + [[Software Architectures]]

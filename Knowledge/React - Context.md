@@ -6,12 +6,12 @@
 
 ## Use cases
 1. When prop drilling gets complicated
-2. Managing global state in your app (Global data requirement): login, 
+2. Managing global state in your app (Global data requirement): current authenticated user, theme, or preferred language 
 3. Themable components
 4. Design Pattern named **Compound Components**
 ## How to
 1. Create context
-
++ you pass default value to createContext
 ```javascript
 import { createContext } from 'react';
 
@@ -19,7 +19,7 @@ const MyContext = createContext();
 export default MyContext;
 ```
 
-2. Wrap your App with Context Provider
+2. Wrap your App or section you need to provide with Context Provider
 ```javascript
 import React from 'react';
 import MyContext from './MyContext';
@@ -50,3 +50,5 @@ const MyComponent = () => {
 
 export default MyComponent;
 ```
+
+> also create a cutom hook to throw an exception if some component tries to access data outside the provider, is useful when working with ts
