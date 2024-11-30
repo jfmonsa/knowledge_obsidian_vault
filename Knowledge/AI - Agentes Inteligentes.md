@@ -3,6 +3,7 @@
 	+ Percibe cosas de el ambiente
 	+ En base a eso efectua acciones
 + Sistemas de control
+> entidad capaz de percibir su entorno, procesar tales percepciones y responder o actuar en dicho entorno de manera [racional](https://es.wikipedia.org/wiki/Racionalidad "Racionalidad"), es decir, logrando objetivos, tendiendo a maximizar un resultado esperado
 
 ![[Pasted image 20240818205702.png]]
 

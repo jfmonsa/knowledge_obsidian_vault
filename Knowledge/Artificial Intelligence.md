@@ -21,10 +21,7 @@
 ## 8 - [[AI Algo minimax con desiciones imperfectas]]
 ## 9 - [[ AI - Juegos con elemento aleatorio]]
 
-# Logica y Agentes
-Inferencia en lógica de predicados * Forma canónica * Forma normal conjuntiva
+# Logica
+## 10 - [[Agentes Basados en Conocimieno]]
 
-## Agentes Basados en Logica
-![[Pasted image 20241125192219.png]]![[Pasted image 20241125192242.png]]
-Expresión generalizada:
-![[Pasted image 20241125192301.png]]
+# Machine Learning
