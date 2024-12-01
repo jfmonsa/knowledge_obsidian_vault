@@ -22,6 +22,7 @@
 ## 9 - [[ AI - Juegos con elemento aleatorio]]
 
 # Logica
-## 10 - [[Agentes Basados en Conocimieno]]
+## 10 - [[AI - Agentes Basados en Conocimieno]]
 
+## 11 - [[AI - Prolog]]
 # Machine Learning

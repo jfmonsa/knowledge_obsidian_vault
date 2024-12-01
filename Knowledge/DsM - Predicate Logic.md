@@ -4,7 +4,7 @@
 + Propositional Logic is the basis of First-order logic, First-order logic adds **predicates** and  **quatifiers**
 
 ## Predicate (formula)
-statements involving variables, que puede conectar con una o varias expresiones para formar una oración. Los predicados son ==Tratados como funciones==. e.g $\text{isPhilosopher(x)}$
+statements involving variables, que puede conectar con una o varias expresiones para formar una oración. Los predicados son ==Tratados como funciones==. e.g $\text{isPhilosopher}(x)$
 
 + **Thre truth value of a formula ...** The truth of a formula such as "_x_ is a philosopher" depends on which object is denoted by _x_ and on the interpretation of the predicate "is a philosopher". (==variables = subjects==)
 + Relationships between predicates can be stated using logical connectives. e.g. "if _x_ is a philosopher, then _x_ is a scholar"
@@ -15,7 +15,7 @@ are applied to variables in a formula
 ## Domain of Discourse
 + **Domain of discourse**: the entities that can instantiate the variables
 
-> A theory about a topic, such as set theory, a theory for groups,[[3]](https://en.wikipedia.org/wiki/First-order_logic#cite_note-Tarski53-3) or a formal theory of [arithmetic](https://en.wikipedia.org/wiki/Arithmetic "Arithmetic"), is usually a first-order logic together with a specified [domain of discourse](https://en.wikipedia.org/wiki/Domain_of_discourse "Domain of discourse")
+> A theory about a topic, such as set theory, a theory for groups, or a formal theory of [arithmetic](https://en.wikipedia.org/wiki/Arithmetic "Arithmetic"), is usually a first-order logic together with a specified [domain of discourse](https://en.wikipedia.org/wiki/Domain_of_discourse "Domain of discourse")
 
 > The domain of discourse _D_ is a ==nonempty set of "objects"== of some kind. Intuitively, given an interpretation, a first-order formula becomes a statement about these objects; for example, $\exists x P(x)$ states the existence of some object in _D_ for which the predicate _P_ is true
 
@@ -67,7 +67,7 @@ $$ \frac{ p_1' \:  p_2' \dots \: (p_1 \land p_2 \land \dots p_n \to q)}{\text{SU
 	+ Si sabemos que todas las proposiciones $p_i'$ son verdaderas y que $p_1 \land p_2 \land \dots \land p_n$ también es verdadera tras sustituir $\theta$ . Entonces $q$
 
 ### Condiciones
-+ La implicación debe ser una **Sentencia de horn**: conjunciones a la izquierda y a la derecha un solo atomo
++ ==La implicación debe ser una **Sentencia de horn**==: conjunciones a la izquierda y a la derecha un solo atomo
 ### Ejemplo
 #### 1)
 **Usando MPG**
@@ -90,7 +90,7 @@ BC:
 Demostrar F(a) usando MPG
 ![[Pasted image 20241130183118.png]]
 
-## Forma Canonica
+## Forma Canónica
 Cuando la base de conocimientos se forma exclusivamente
 de **sentencias Horn** se dice que está en **forma canónica**
 
@@ -119,9 +119,16 @@ Pasos:
 3. Eliminar cuantificadores existenciales
 
 ## Eliminar Cuantificadores Existenciales
+### Caso 1
+![[Pasted image 20241130190744.png]]
 
-# Other
-## Qualifiers with restricted domain
-![[Pasted image 20241125235107.png]]
-## Logical Equivalences (Quantifiers)
-![[Pasted image 20241125235322.png]]
+**Ejemplos**
++ $\exists x P(x)$ entonces: $P(a)$
++ $\exists x \forall y P(x) \lor Q(y)$  entonces: $\forall P(a) \lor Q(y)$
+**Solución**
++ aplicar eliminación existencial: reemplazar variable por una constante que no esta presente en la BC original
+### Caso 2
+![[Pasted image 20241130220132.png]]
+
+**Ejemplos**:
++ $\forall x \exists y (E(y) \land R(x,y)) \to A(x)$ entonces: $\forall E(f(x)) \land R(x, f(x))$
