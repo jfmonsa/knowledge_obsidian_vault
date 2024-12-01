@@ -31,7 +31,7 @@
 
 # Other
 ## 1 -  [[React.js - Functional Programming in React]]
-## 2- [[React - How React Works Under The Hood?]]
+## 2- [[React - How React Works Under The Hood]]
 
 ## Resources
 + https://www.youtube.com/watch?v=x6GjAURLRrY
