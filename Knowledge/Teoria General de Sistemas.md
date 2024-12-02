@@ -19,3 +19,4 @@
 ## 6 - [[TGS - Entropia y Neguentropia ]]
 + Sistemas cerrados vs Abiertos, entropia, neguentropia y subsistencia de un sistema, entropia y la información
 ## 7 - [[TGS - Principio de la Organicidad]]
+## 8 - [[TGS - Subsistemas de Control]]
