@@ -15,7 +15,7 @@ Programming paradigm based on ***Objects*** which can contain ***Data*** (Fields
 	+ **Inheritance vs Composition** use Is-a or Has-a thinking
 +  A method call is also known as ***Message passing***
 
-### 3. Difference between Class vars and methods and Instance ones. (static java)
+### 3. Difference between Class vars and methods and Instance ones. (static)
 
 Static in java? ***Procedures and variables can be specific to either the class or the instance***
 
@@ -40,7 +40,6 @@ public abstract class Car {
     public abstract void accelerate();
     public abstract void brake();
 }
-
 ```
 ### 2. Inheritance
 + Code reuse and extensibility
@@ -63,4 +62,3 @@ Defining the same method with different number of parameters or different type
 ## Other 
 + [between relational databases and object oriented paradigm there is a general need to bridge the two worlds](https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch)
 + SOLID Principles and GRASP guidelines
-+ OOP is different from [Prototype-based Programming](https://en.wikipedia.org/wiki/Prototype-based_programming), javascript use this paradigm

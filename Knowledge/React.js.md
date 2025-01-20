@@ -1,6 +1,7 @@
 #index
 
-+ A javascript library
++ A javascript library for building ui
++ developed by facebook
 + Recomended for: 1.Flexibility (startups). 2.teams where there is at least one senior developer
 # Basics
 ## 1 - [[React - Intro]]

@@ -6,7 +6,7 @@
 + mistake in logic or sintax
 + implemente unit tests
 ### Operational
-+ expected errores
++ expected errors
 + when operation has the pontential to fail
 + Handled by determining what should happen if it fails
 + eg. "User not found", "Not authorized"

@@ -1,19 +1,23 @@
-
-+ [[Learn English]]
-+ [[UI - UX]]
-## Math
+# Math
 + [[Discrete Maths]]
-+ [[Basic Maths]]: Operations and tricks
-## Computational Thinking
++ [[Basic Maths]]: Problem solving topics for job search tests: percentages, equations, sequences, combinatorics
+# Computer Science
 + [[OPP (Object Oriented Programming)]]
 + [[FP - Functional Programming]]
-+ [[DSA - Data Structures and Algorithms]]:
++ [[DSA - Data Structures and Algorithms]]
+## Software Development
++ [[SDLC - Software Development Life cycle and Methodologies]]
 + [[DPP - Design Patterns and Principles]]
++ [[SD - System Design]]
 + [[Software Architectures]]
 + [[Relational Data Bases]]
----
 + [[Testing]]
-+ [[Backend]]
++ [[UI - UX]]
++ [[DevOps]]
+### Tools
++ [[learn git]]
++ [[Docker]]
++ [[Vim]]
 ## Programming Languages and Technologies
 + [[Learning Java]]
 + [[Learning C++]]
@@ -25,9 +29,10 @@
 	+ [[TypeScript]]
 	+ [[Next.js]]
 	+ [[WebAssembly]]
+
+## Mix
+
 + [[Linux Ricing]] Customize your environment with arch Linux
-## Tools
-+ [[learn git]]
 + Vim
 + Browsers
 	+ Caret browsing
@@ -43,6 +48,6 @@
 + [[Computational Simulation]]
 + [[SfD - Software Development 1, 2]]
 ---
-## Other
+# Other
 +  [[Templates index]]
 + [[anki index]]

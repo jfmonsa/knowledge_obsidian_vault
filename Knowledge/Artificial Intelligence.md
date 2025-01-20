@@ -26,3 +26,4 @@
 
 ## 11 - [[AI - Prolog]]
 # Machine Learning
+## 12 - [[AI - Clustering, K-means]]

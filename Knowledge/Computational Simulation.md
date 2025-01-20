@@ -1,21 +1,13 @@
-+ Prof  William Roldan Piedrahita
-+ william.roldan@correounivalle.edu.co
 + 750098M
 
-**Pre-requisitos**
+**Requirements**
 + Python
 + Excel
-+ Probabilidad y Estadística
++ Probability y Statistics
 # Notes
 ## 1 - [[ Comp Simulation - Intro ]]
 ## 2 - [[Comp Sim - Probability]]
 ## 3 - [[Comp Sim - Monte Carlo Method]]
-
-# 4- Extras
-## Grading Scale
-+ 1st test - 25%
-+ 2nd test - 25%
-+ Final project - 25%
-+ in-class workshops - 25%
-
+## 4 - [[Comp Sim - Las Vegas Algorithm]]
+## 5 - [[Comp Sim - Discrete-event simulation]]
 

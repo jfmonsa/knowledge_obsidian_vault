@@ -31,7 +31,4 @@ public class UserDaoImpl implements UserDao {
 1
 > un Repositorio encapsula el conjunto de objetos persistidos en un almacén de datos y las operaciones realizadas sobre ellos, proveyendo una concepción mas orientada a objetos de la capa de persistencia. Ademas, apoya el objetivo de lograr una separación limpia y una dependencia en un solo sentido entre el dominio y la capa de acceso a datos. (…) Un Repository reduce la cantidad de código necesitada para tratar con todas las consultas que se llevan a cabo. - ***Martin Fowler, Patterns of Enterprise Application Architecture***
 
-2
-> 
-
-Tengo entendido que el patron DAO solo se centra en UN objeto o UNA entidad, mietras que el patron Repository, se centra en COLECCIONES de Objetos (Por ende muchas tablas relacionadas entre si, osea muchas entidades relacionadas por herencia), si alguien me puede corregir en caso de estar equivocado se lo agradeceria..
++ un repository puede tener más de una tabla asociada

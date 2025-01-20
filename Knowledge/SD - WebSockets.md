@@ -1,22 +1,18 @@
 # Websockets
-+ standard that describes a way for clients and servers to exchange messages in realtime
-+ provides bi-directional communication between server and client with the usage of a single long-lasting [TCP connection](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)
++ standard that describes a way for clients and servers to exchange messages in **realtime**
++ provides **bi-directional communication** between server and client with the usage of a single long-lasting [TCP connection](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)
 + Layer 7 (OSI)
 + not protected by same-origin policy
-+ The websocket server **consume events** for the client that is usign the websocket server
-	+ Client **send** messages
-	+ server needs to listen to those events (**Subscribe to events**)
-+ Es un protocolo que esta por encima de http
-## Concepts
-+ **WebSocket** - is a protocol that depends on TCP protocol (like HTTP)
++ Client and server **listen** and emit **events** to comunicate
++ Implemented on top of **http**
+## Javascript
 + **ws** - a node package to emulate the WebSocket support for browsers but for node and usually used as a server (though it can do both)
 + **Socket.IO** - is a library (built on top of WebSocket protocol), (must be used both on client and server). ==Recommended==
 ---
 Other:
 + **Socket** - is an endpoint (in a socket communication)
-+ **Webhook** - is an HTTP-based callback function which allows one way, server to server communication (not related to WebSockets and not concerned in this tutorial series)
 
-## Socket IO
+### Socket IO
 + You need to use it in browser and server
 + You have to set CORS since its a custom protocol built on top of WebSockets protocol
 ---

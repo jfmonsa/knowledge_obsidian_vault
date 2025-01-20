@@ -1,42 +1,38 @@
-# Introducción a Devops
-
-+ La necesidad de optimizar problemas entre el equipo de desarrollo y operaciones
-+ DevOps es un cambio de cultura, los ingenieros de Desarrollo y operaciones trabajan juntos durante todo el ciclo de vida del desarrrollo de un producto
++ DevOps is about bringing developers and operations team together to improve software delivery
++ Combination of Concepts + Tools + Practices
++ make the SDLC as efficient as possible by fully or mostly automatin
++ We can use Agile and DevOps together
 
 ![[Pasted image 20240904073850.png]]
-
-## Evolución del Software
 ![[Pasted image 20240904074206.png]]
++ key focus: **Automation** and **Monitoring**
++ Key topics:
+	+ Networking and Protocols
+	+ Containers: Docker
+	+ Version Control (git ops)
+	+ Cloud: AWS, Azure, GCP
+	+ IaC (Infrastructure as Code)
+	+ SDLC and CI/CD pipelines
+# CI / CD
+![[Pasted image 20250114190037.png]]
++ Stands for Continuos Integration / Continuos Delivery
+CI/CD automates much or all of the manual human intervention traditionally needed to get new code from a commit into production, encompassing the build, test (including integration tests, unit tests, and regression tests), and deploy phases, as well as infrastructure provisioning
 
-## Tres dimensiones del Dev Ops
-+ Cultura - Factor número uno
-+ Metodos
-+ Herramientas
+A CI/CD pipeline, development teams can make changes to code that are then automatically tested and pushed out for delivery and deployment.
 
-### ¿Como cambiar la cultura?
-+ Cambiando forma de trabajar: tests
-+ Cambiando forma de organizarse
-+ Cambiando la forma en que mides a las personas
++ **CI**: integrating all your code changes into the main branch of a shared source code repository early and often, automatically testing each change when you commit or merge them, and automatically kicking off a build. Can identify faster errors, security issues
++ **CD**: automate the infrastructure provisioning and application release process.
+---
++ **Continuous testing**: Unit Testing, Integration Testing, Regression Testing
 
-### ¿Como llegamos a DevOps?
-+ Los arquitectos gastaban mucho tiempo haciendo modelos en papel: diagramas, diseño de sistemas, etc.
-+ Los desarrolladores pasaban meses y meses desarrollando las caracteristicas en un entorno aislado
-+ Luego se pasaba a despliegue y esto se demoraba varios meses, esto pasa porque el departamento de operaciones no tiene idea de los construido por Desarrollo
-
-## Desarrollo Tradicional  - Waterfall
-
-![[Pasted image 20240904081117.png]]
-
-**Problemas con waterfall**
-+ No hay disposición de cambio, resulta muy complicado cambiar los requisitos o el diseño
-+ No sabemos si lo que estamos construyendo funcionara, sino unicamente al final del proceso
-+ No existen entregas inmediatas lo que dificulta el feedback
-
-## XP - Extreme Programming
-+ Kent Beck (1996)
-+ Enfoque interactivo
-+ mejorar la calidad de respuesta a lo cambios de los clientes
-
-![[Pasted image 20240904081448.png]]
-
-![[Pasted image 20240904091807.png]]
+e.g
+1. run linters
+2. build
+3. run tests (unit, integration, e2e)
+4. deploy
+---
+CI/CD vs pre-commit hook
+# Notes
++ [[Cloud Computing]]: Azure
+## Tools
++ [[Azure DevOps]]
