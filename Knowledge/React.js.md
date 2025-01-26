@@ -56,3 +56,4 @@
 	1. Values with dirty checking (e.g compare virtual dom with real one, React)
 	2. Observables: Hold specific values and notify subscribers (Angular)
 	3. Signals (Quirk and Solid)
+	4. Proxy object: vue (similar to observables?)

@@ -26,10 +26,12 @@
 		+ [[Express.js]]
 		+ [[Nest.js]]
 	+ [[React.js]]
+	+ [[Vue.js]]
 	+ [[TypeScript]]
 	+ [[Next.js]]
 	+ [[WebAssembly]]
-
++ [[CSS]]
++ Frontend Fundamentals: Reactivity,
 ## Mix
 
 + [[Linux Ricing]] Customize your environment with arch Linux

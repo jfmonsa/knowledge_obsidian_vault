@@ -7,14 +7,15 @@
 + Git is no delta based VCS, instead it saves a stream of snapshots, if files has not changed it reference the file in the snapshot where it was last changed
 ![[Pasted image 20250117152951.png]]
 + checksumming: SHA-1 calculated based on the content of a file or directory, git uses it to ensure data integrity in its db
-+ Then almosth everything is undoable
-+ nearly all operation is local -> More speed in constrast with CVCS
++ Then almost everything is undoable
++ nearly all operation is local -> More speed in contrast with VCSs
 # 1. Install and git Config
 ```
 git config --global user.name "John Doe"  
 git config --global user.email johndoe@example.com
 git config --global core.editor emacs
 git config --global init.defaultBranch main
+git config --global credential.helper cache # don't type your password every time
 
 git help <verb>  
 git <verb> --help
@@ -165,11 +166,89 @@ $ git config --global alias.unstage 'reset HEAD --'
 $ git config --global alias.last 'log -1 HEAD'
 ```
 
+
+# Git Branching
++ The "killer feature" of git
++ `HEAD` Pointer to local branch you're currently on (last commit)
+```
+$ git branch <name> #create new branch
+$ git checkout <branch> # switch branch
+$ git checkout -b <name> # create a new branch a move to it
+$ git branch -d <name> # delete unused branch
+$ git branch # list branches
+$ git branch --merged # branches contain work you have merged or --no-merged to do the opposite
+```
+
+```
+$ git log <branch name> # show commit history to specific branch
+$ git log --all # show all branches
+$ git log --oneline --decorate --graph --all
+```
+
+### Git Switch
++ Newly introduced is recommended to use instread `git checkout` for branch operations
+```
+git switch <name> # switch to existing branch
+git switch -c <name> # create and switch to new branch
+git switch - # return to you previously checkout branch
+```
+
+### Git merge
+check out the branch you wish to merge  into and then run `git merge`
+
+```
+git switch main
+git merge hotfix/blabla
+```
+
+Git merge will use one of two strategies
+1. **Fast Forward**: If the current branch has not diverged from the branch being merged, Git performs a fast-forward merge
+	+ This simply moves the current branch pointer forward to the latest commit on the other branch.
+![[Pasted image 20250120153707.png]]
+![[Pasted image 20250120153721.png]]
+1. **Three-Way Merge**: - If the branches have diverged, Git performs a three-way merge.
+	+ This involves creating a new commit that combines the changes from both branches.
+![[Pasted image 20250120153325.png]]
+![[Pasted image 20250120153335.png]]
+#### Conflicts
++ If there are conflicting changes in the two branches, Git will prompt you to resolve the conflicts manually.
+- After resolving the conflicts, you need to stage the resolved files and complete the merge.
+
+### Tracking Branches
+Tracking branches in Git are local branches that track the state of remote branches.
+```
+$ git checkout -b feature-branch origin/feature-branch
+$ git branch --set-upstream-to=origin/feature-branch feature-branch
+$ git branch -vv # list tracked branches
+```
+### Deleting Remote Branches
+```
+$ git push origin --delete <branch name>
+```
+
+### Rebasing
+In git are two main ways to integrate chagnes from one branch into another: 1. merge 2. rebase.
++ rebase give us cleaner commit history (linear history)
++ never rebase something that you have pushed
+#### Basic Rebasing
++ `rebase`: You can take all the changes that were committed on one branch and reapply them in a different branch. e.g.
+![[Pasted image 20250120145903.png]]
+
+#### --onto option ??
+```
+$ git checkout experiment
+$ git rebase main
+```
+then
+![[Pasted image 20250120145921.png]]
+
+---
+Also:
++ Three way merge (divergent branches) this creates a new merge commit
++ vs fast forwared
 # Git Vocab
 - **Working Directory**: This is the directory on your filesystem where the files of your project are located.
 - **Working Tree**: This term refers to the set of files in your working directory that are being tracked by Git. It represents the current state of the files checked out from the repository, including any modifications that have not yet been committed.
 - **Snapshot**: Is a record of the state of the project, each commit represents an snapshot
 - **Repository**: is a data structure used by git to store metadata (commit history, branches, etc.) and the of files and directories.
 - **untracked files**: Each file in your working directory that were not in your previous snapshot as well as newly staged files.
-
-
