@@ -14,7 +14,7 @@ Basic:
 + [[DPP - SOLID]]
 + [[DPP - Inversion of Control (IoC)]], same as Dependency Inversion Principle of Solid
 
-# Software Design Patterns
+# Software Design Patterns (GoF)
 
 + general concept for solving a particular problem
 + High level description of a solution
@@ -48,6 +48,8 @@ concerned with algorithms and the assignment of responsibilities between objects
 ### - Observable
 ### - Template
 ### - Specification Pattern
+# Other Patterns
+## [[DPP - BFF (Backend For Frontend)]]
 # Mix Code Good Practices (Idioms)
 + Basic and low-level patterns
 ### Guard Clauses

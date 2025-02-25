@@ -10,30 +10,23 @@
 + [[DPP - Design Patterns and Principles]]
 + [[SD - System Design]]
 + [[Software Architectures]]
-+ [[Relational Data Bases]]
++ [[Data Bases]]
 + [[Testing]]
++ [[Frontend]]: fundamentals, frameworks, notes, architectures, etc.
++ [[Backend]]: frameworks
 + [[UI - UX]]
 + [[DevOps]]
 ### Tools
-+ [[learn git]]
++ [[Git]]
 + [[Docker]]
 + [[Vim]]
 ## Programming Languages and Technologies
 + [[Learning Java]]
 + [[Learning C++]]
 + [[Learn Javascript]]
-	+ [[Learn Node.js]]
-		+ [[Express.js]]
-		+ [[Nest.js]]
-	+ [[React.js]]
-	+ [[Vue.js]]
 	+ [[TypeScript]]
-	+ [[Next.js]]
-	+ [[WebAssembly]]
-+ [[CSS]]
-+ Frontend Fundamentals: Reactivity,
++ [[WebAssembly]]
 ## Mix
-
 + [[Linux Ricing]] Customize your environment with arch Linux
 + Vim
 + Browsers
@@ -49,6 +42,9 @@
 + [[Artificial Intelligence]]
 + [[Computational Simulation]]
 + [[SfD - Software Development 1, 2]]
+### Semestre 8
++ [[Sistemas de Información I]]
++ [[Constraint Programming (CP)]]
 ---
 # Other
 +  [[Templates index]]

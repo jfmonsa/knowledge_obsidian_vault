@@ -1,7 +1,8 @@
-+ Pro Git (book)
-# Git
 + **Version Control?**: controlling, organizing, and tracking different versions in history of computer files
 + Distribute Version Control System
+---
+**Resources**
++ Pro Git (book)
 ![[Pasted image 20250117144935.png]]
 ## Difference between others VCSs
 + Git is no delta based VCS, instead it saves a stream of snapshots, if files has not changed it reference the file in the snapshot where it was last changed

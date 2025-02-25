@@ -49,11 +49,3 @@
 + https://fireship.io/courses/react/
 + 30 days of react repo
 + Gentleman programming (youtube)
-
-# Reactivity
-+ Its a "Black Box" that monitor changes in ==state== and ==update the ui==
-+ Reactivity is achive in frameworks in a different way
-	1. Values with dirty checking (e.g compare virtual dom with real one, React)
-	2. Observables: Hold specific values and notify subscribers (Angular)
-	3. Signals (Quirk and Solid)
-	4. Proxy object: vue (similar to observables?)

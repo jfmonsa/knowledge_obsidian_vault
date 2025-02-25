@@ -147,6 +147,9 @@ The inner display type determines how the children of the element are laid out. 
 + Shadcn: React
 + MUI: React
 ---
+# Architecture
++ with `@layer` layers: framework > globals > components > utilities.
+	+ This means later layers will override
 + BEM architecture
 
 # HTML

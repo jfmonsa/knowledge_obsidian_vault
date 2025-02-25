@@ -62,7 +62,7 @@ const app = createApp({
 + register components
 ## 2 - Template Sintax
 + declaratively bind the rendered DOM to the underlying component instance's data.
-
++ template is like react fragment
 ### Text Interpolation
 + `{{}}` sintax run js expressios or access reactive properties
 ### 3 - Directives
@@ -309,6 +309,54 @@ import ButtonCounter from './ButtonCounter.vue'
 + `beforeUnmount` realizar tareas de limpieza
 ![[Pasted image 20250122152757.png]]
 
+## 13. Watchers
++ Perform side effects in reaction to state changes: e.g. mutating DOM, save data to LocalStorage
++ triggers a callback whenever a piece of reactive state changes
+```vue
+<script setup>
+const question = ref('')
+const answer = ref('')
+watch(question, async () => {
+ // fetch data from api when a question is made and save it on answer ref
+})
+</script>
+```
+
+### `watchEffect`
++ utomatically tracks any reactive properties accessed within its callback function and re-runs the effect whenever those properties change.
++ can perform any side effects, such as updating the DOM, making API calls, or logging data.
+### Deep and Shallow watch
++ by default create a deep watcher for reactive object, if not you can:
+```js
+watch(
+  () => state.someObject,
+  () => {
+    // fires only when state.someObject is replaced
+  }
+)
+```
+
+### Eager and Lazy watchers
++ by default callback will be fired lazy (before watched state updates)
++ you can change this using `{ inmediate: true}` as 3rd arg of `watch()`
+
+### Clean-up
+```js
+import { watch, onWatcherCleanup } from 'vue'
+
+watch(id, (newId) => {
+  const controller = new AbortController()
+
+  fetch(`/api/${newId}`, { signal: controller.signal }).then(() => {
+    // callback logic
+  })
+
+  onWatcherCleanup(() => {
+    // abort stale request
+    controller.abort()
+  })
+})
+```
 ## Composables
 + reusing stateful logic
 + helper or aux functions are used for stateless logic
@@ -322,3 +370,6 @@ import ButtonCounter from './ButtonCounter.vue'
 + tree-shakable automatically
 + Powerful CLI
 + powerful UI library
+# Pinia
++ Global State Management
++ scalability
