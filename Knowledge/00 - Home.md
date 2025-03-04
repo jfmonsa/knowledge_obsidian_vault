@@ -45,6 +45,8 @@
 ### Semestre 8
 + [[Sistemas de Información I]]
 + [[Constraint Programming (CP)]]
++ [[Computational Complexity Theory]]
++ [[Seminario Trabajo de Grado]]
 ---
 # Other
 +  [[Templates index]]

@@ -42,7 +42,7 @@
 
 ## Lecture 5
 ### 1. Cuales sistemas se pueden clasificar en los niveles 2,5 o 3.5, según lo visto en clase?  
-Algunos sistemas que se encuentran en una line gris entre el nivel 2 (sistemas dinamicos) y nivel 3 (sistemas de control / cibernéticos) en la jerarquía de sistemas definida por boulding podrían ser:
+Algunos sistemas que se encuentran en una linea gris entre el nivel 2 (sistemas dinamicos) y nivel 3 (sistemas de control / cibernéticos) en la jerarquía de sistemas definida por boulding podrían ser:
 
 + Un ventilador el cual por si solo no tiene la capacidad de regular la temperatura en base a sensores y retroalimentarse (Como si lo haría un aire acondicionado - sistema abierto), el ventilador necesita de un tercero para ser usado dependiendo de la temperatura, este mismo análisis lo podríamos aplicar a un nivel (herramienta de albañil) el cual necesita de un tercero para equilibrarse
 + Por otro lado lo que podríamos considerar como nivel 3.5 serían organismos que no tienen todas las características de seres vivos pero que se acercan mucho a esto y tienen una complejidad menor pero similar, un ejemplo los virus
