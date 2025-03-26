@@ -34,7 +34,7 @@ Formally:
 + Find
 	+ Assignment of values to variables such as
 		+ All constraints are satisfied
-		+ The objective is optimised
+		+ The objective is optimized
 # Modeling & Representation: ¿How to model the problem?
 + CP is declarative
 + Effort is spent describing the problem, not solving it
@@ -73,7 +73,7 @@ $Y= 6 \land X=4$
 + refers to the reduction of the search space of a problem by eliminating values
 + Projection is applied to a subset of variables Y ⊆ X, and it involves removing values or combinations of values that do not satisfy the constraints related to Y (X is the set of variables in the problem)
 ## Equivalence
-+ $P_1$ and $P_2$ are equivalent if they hav ethe same set of solutions
++ $P_1$ and $P_2$ are equivalent if they have ethe same set of solutions
 ## Solved and failed CSP's
 + CSP is **solved** if
 	+ All its constraints are solved
@@ -84,9 +84,9 @@ $Y= 6 \land X=4$
 
 # CP Basic Framework 
 ![[Pasted image 20250303232741.png]]
-+ Propagation: add constraints to reduce domains and constraints leading to new equivalent CSP's
++ ==Propagation==: add constraints to reduce domains and constraints leading to new equivalent CSP's
 	+ in other words: eliminate possible values of the domains of solution that don't not satisfy the solution
-+ Proceed by cases is a recursive call of this algorithm for each newly formed CSP
++ ==Proceed by cases and split== is a recursive call of this algorithm for each newly formed CSP
 
 This algorithm recursive algorithm could be analyze as a tree
 ![[Pasted image 20250303233251.png]]
@@ -106,6 +106,7 @@ sistency),
 + replace a CSP by a equivalent one that is simpler
 + constraint propagation is performed by repeatedly **reducing** domains and/or constraints while maintaining equivalence
 + When no more propagation can be done the problem is **atomic**
++ propagation algos uses propagation rules ro reduced domains
 ### Constraint Propagation Algorithms
 + Stopping criterion for general CSP’s: a local consistency notion.
 ## Split

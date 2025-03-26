@@ -47,6 +47,7 @@
 + [[Constraint Programming (CP)]]
 + [[Computational Complexity Theory]]
 + [[Seminario Trabajo de Grado]]
++ [[Fundamentos Gestion Tecnologíca]]
 ---
 # Other
 +  [[Templates index]]
